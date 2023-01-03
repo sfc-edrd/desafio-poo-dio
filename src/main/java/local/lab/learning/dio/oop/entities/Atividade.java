@@ -1,8 +1,6 @@
 package local.lab.learning.dio.oop.entities;
 
-import local.lab.learning.dio.oop.entities.abstractions.Conteudo;
-
-public class Atividade extends Conteudo
+public class Atividade extends AbstractConteudo
 {
     /**
      *

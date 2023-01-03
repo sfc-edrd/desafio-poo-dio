@@ -1,7 +1,5 @@
 package local.lab.learning.dio.oop.entities;
 
-import local.lab.learning.dio.oop.entities.abstractions.Conteudo;
-
 import java.util.LinkedHashSet;
 
 public class Dev
@@ -12,8 +10,8 @@ public class Dev
      *
      */
     private String                      nome;
-    private LinkedHashSet<Conteudo>     conteudosInscritos;
-    private LinkedHashSet<Conteudo>     conteudosConcluidos;
+    private LinkedHashSet<AbstractConteudo>     conteudosInscritos;
+    private LinkedHashSet<AbstractConteudo>     conteudosConcluidos;
 
     /**
      *
@@ -58,7 +56,7 @@ public class Dev
     {
         return (conteudosConcluidos
                 .stream()
-                .map(Conteudo::calcularXp)
+                .map(AbstractConteudo::calcularXp)
                 .reduce(0, (total, xp) -> total + xp));
     }
 

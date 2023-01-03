@@ -4,7 +4,7 @@ import local.lab.learning.dio.oop.entities.Atividade;
 import local.lab.learning.dio.oop.entities.Bootcamp;
 import local.lab.learning.dio.oop.entities.Dev;
 import local.lab.learning.dio.oop.entities.Mentoria;
-import local.lab.learning.dio.oop.entities.abstractions.Conteudo;
+import local.lab.learning.dio.oop.entities.AbstractConteudo;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -13,7 +13,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Conteudo    c1, c2, c3, c4, c5;
+        AbstractConteudo c1, c2, c3, c4, c5;
         Bootcamp    b1;
         Dev         d1;
 

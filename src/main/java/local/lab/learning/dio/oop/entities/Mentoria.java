@@ -1,11 +1,8 @@
 package local.lab.learning.dio.oop.entities;
 
-import local.lab.learning.dio.oop.entities.abstractions.Conteudo;
-
 import java.time.LocalDate;
-import java.util.Collections;
 
-public class Mentoria extends Conteudo
+public class Mentoria extends AbstractConteudo
 {
     /**
      *

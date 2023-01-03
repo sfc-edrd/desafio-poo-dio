@@ -1,7 +1,5 @@
 package local.lab.learning.dio.oop.entities;
 
-import local.lab.learning.dio.oop.entities.abstractions.Conteudo;
-
 import java.time.LocalDate;
 import java.util.LinkedHashSet;
 
@@ -16,7 +14,7 @@ public class Bootcamp
     private String                      descricao;
     private LocalDate                   dataInicial;
     private LocalDate                   dataFinal;
-    private LinkedHashSet<Conteudo>     conteudos;
+    private LinkedHashSet<AbstractConteudo> abstractConteudos;
     private LinkedHashSet<Dev>         devs;
 
     /**
@@ -30,7 +28,7 @@ public class Bootcamp
         this.descricao = descricao.trim();
         this.dataInicial = LocalDate.now();
         this.dataFinal = dataInicial.plusDays(45);
-        conteudos = new LinkedHashSet<>();
+        abstractConteudos = new LinkedHashSet<>();
         devs = new LinkedHashSet<>();
     }
 
@@ -59,9 +57,9 @@ public class Bootcamp
         return (dataFinal);
     }
 
-    public LinkedHashSet<Conteudo> getConteudo()
+    public LinkedHashSet<AbstractConteudo> getConteudo()
     {
-        return (conteudos);
+        return (abstractConteudos);
     }
 
     public LinkedHashSet<Dev> getDevs()
@@ -74,9 +72,9 @@ public class Bootcamp
      * SETTERS
      *
      */
-    public void addConteudo(Conteudo conteudo)
+    public void addConteudo(AbstractConteudo abstractConteudo)
     {
-        conteudos.add(conteudo);
+        abstractConteudos.add(abstractConteudo);
     }
 
     public void addDev(Dev dev)
